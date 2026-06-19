@@ -158,9 +158,10 @@ class TMDBItem {
 
   /// 转换为 BangumiItem 格式（兼容现有 UI）
   BangumiItem toBangumiItem() {
+    final tmdbType = isMovie ? 98 : 99; // 98=TMDB电影 99=TMDB剧集
     return BangumiItem(
       id: id,
-      type: 2, // 2 表示番剧
+      type: tmdbType, // TMDB 类型标识，区分于 Bangumi 的 type=2
       name: name,
       nameCn: nameCn.isEmpty ? name : nameCn,
       summary: overview,

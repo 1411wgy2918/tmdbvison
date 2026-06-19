@@ -69,7 +69,10 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   bool get _isShowingBangumiInfoSkeleton =>
       infoController.isLoading || _showBangumiInfoSkeleton;
 
+  bool _isTMDB() => infoController.bangumiItem.type >= 98;
+
   bool _needsBangumiInfoRefresh(BangumiItem bangumiItem) {
+    if (bangumiItem.type >= 98) return false; // TMDB 项，跳过 Bangumi API
     final votesCount = bangumiItem.votesCount;
     final missingVoteDistribution =
         votesCount.isEmpty || bangumiItem.votes <= 0 || votesCount.length < 10;
@@ -77,6 +80,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadCharacters() async {
+    if (_isTMDB()) return; // TMDB 项无需加载角色
     if (charactersIsLoading) return;
     setState(() {
       charactersIsLoading = true;
@@ -106,6 +110,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadStaff() async {
+    if (_isTMDB()) return; // TMDB 项无需加载制作人员
     if (staffIsLoading) return;
     setState(() {
       staffIsLoading = true;
@@ -135,6 +140,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadMoreComments({bool loadMore = false}) async {
+    if (_isTMDB()) return; // TMDB 项无需加载评论
     if (commentsIsLoading) return;
     setState(() {
       commentsIsLoading = true;
@@ -167,6 +173,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   void onBangumiRatingTap() {
+    if (_isTMDB()) return; // TMDB 项不支持 Bangumi 评价
     final token =
         GStorage.getSetting(SettingsKeys.bangumiAccessToken).toString().trim();
     if (token.isEmpty) {
@@ -378,9 +385,14 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
                       EmbeddedNativeControlArea(
                         child: IconButton(
                           onPressed: () {
+                            final type = infoController.bangumiItem.type;
                             launchUrl(
                               Uri.parse(
-                                  'https://bangumi.tv/subject/${infoController.bangumiItem.id}'),
+                                  type >= 98
+                                      ? type == 98
+                                          ? 'https://www.themoviedb.org/movie/${infoController.bangumiItem.id}'
+                                          : 'https://www.themoviedb.org/tv/${infoController.bangumiItem.id}'
+                                      : 'https://bangumi.tv/subject/${infoController.bangumiItem.id}'),
                               mode: LaunchMode.externalApplication,
                             );
                           },
