@@ -6,6 +6,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:kazumi/modules/search/plugin_search_module.dart';
 import 'package:kazumi/pages/info/rating_review_dialog.dart';
 import 'package:kazumi/request/apis/bangumi_api.dart';
+import 'package:kazumi/request/apis/tmdb_api.dart';
+import 'package:kazumi/modules/bangumi/tmdb_converter.dart';
 import 'package:mobx/mobx.dart';
 import 'package:kazumi/services/logging/logger.dart';
 import 'package:kazumi/modules/comments/comment_item.dart';
@@ -192,6 +194,39 @@ abstract class _InfoController with Store {
     }
     KazumiLogger().i(
         'InfoController: loaded character list length ${characterList.length}');
+  }
+
+  Future<void> queryTMDBCharactersByID(int id) async {
+    final mediaType = bangumiItem.type == 98 ? 'movie' : 'tv';
+    final credits = await TMDBApi.getCredits(id, mediaType: mediaType);
+    if (credits == null) return;
+    final cast = credits['cast'] as List? ?? [];
+    characterList.clear();
+    characterList.addAll(TMDBConverter.convertCastToCharacterItems(cast));
+    KazumiLogger().i(
+        'InfoController: loaded TMDB character list length ${characterList.length}');
+  }
+
+  Future<void> queryTMDBStaffByID(int id) async {
+    final mediaType = bangumiItem.type == 98 ? 'movie' : 'tv';
+    final credits = await TMDBApi.getCredits(id, mediaType: mediaType);
+    if (credits == null) return;
+    final crew = credits['crew'] as List? ?? [];
+    staffList.clear();
+    staffList.addAll(TMDBConverter.convertCrewToStaffItems(crew));
+    KazumiLogger().i(
+        'InfoController: loaded TMDB staff list length ${staffList.length}');
+  }
+
+  Future<void> queryTMDBCommentsByID(int id) async {
+    final mediaType = bangumiItem.type == 98 ? 'movie' : 'tv';
+    final reviews = await TMDBApi.getReviews(id, mediaType: mediaType);
+    if (reviews == null) return;
+    final results = reviews['results'] as List? ?? [];
+    commentsList.clear();
+    commentsList.addAll(TMDBConverter.convertReviewsToCommentItems(results));
+    KazumiLogger().i(
+        'InfoController: loaded TMDB comments list length ${commentsList.length}');
   }
 
   Future<void> queryBangumiStaffsByID(int id) async {

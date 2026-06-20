@@ -80,7 +80,6 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadCharacters() async {
-    if (_isTMDB()) return; // TMDB 项无需加载角色
     if (charactersIsLoading) return;
     setState(() {
       charactersIsLoading = true;
@@ -88,8 +87,13 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
       charactersIsEmpty = false;
     });
     try {
-      await infoController
-          .queryBangumiCharactersByID(infoController.bangumiItem.id);
+      if (_isTMDB()) {
+        await infoController
+            .queryTMDBCharactersByID(infoController.bangumiItem.id);
+      } else {
+        await infoController
+            .queryBangumiCharactersByID(infoController.bangumiItem.id);
+      }
       if (mounted) {
         setState(() {
           charactersIsLoading = false;
@@ -110,7 +114,6 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadStaff() async {
-    if (_isTMDB()) return; // TMDB 项无需加载制作人员
     if (staffIsLoading) return;
     setState(() {
       staffIsLoading = true;
@@ -118,8 +121,13 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
       staffIsEmpty = false;
     });
     try {
-      await infoController
-          .queryBangumiStaffsByID(infoController.bangumiItem.id);
+      if (_isTMDB()) {
+        await infoController
+            .queryTMDBStaffByID(infoController.bangumiItem.id);
+      } else {
+        await infoController
+            .queryBangumiStaffsByID(infoController.bangumiItem.id);
+      }
       if (mounted) {
         setState(() {
           staffIsLoading = false;
@@ -140,7 +148,6 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   }
 
   Future<void> loadMoreComments({bool loadMore = false}) async {
-    if (_isTMDB()) return; // TMDB 项无需加载评论
     if (commentsIsLoading) return;
     setState(() {
       commentsIsLoading = true;
@@ -148,9 +155,14 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
       commentsIsEmpty = false;
     });
     try {
-      await infoController.queryBangumiCommentsByID(
-          infoController.bangumiItem.id,
-          refresh: !loadMore);
+      if (_isTMDB()) {
+        await infoController
+            .queryTMDBCommentsByID(infoController.bangumiItem.id);
+      } else {
+        await infoController.queryBangumiCommentsByID(
+            infoController.bangumiItem.id,
+            refresh: !loadMore);
+      }
       if (mounted) {
         setState(() {
           commentsIsLoading = false;

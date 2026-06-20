@@ -283,6 +283,48 @@ class TMDBApi {
     }
   }
 
+  /// 获取演职人员（演员 + 制作人员）
+  static Future<Map<String, dynamic>?> getCredits(int id, {String mediaType = 'tv'}) async {
+    try {
+      final template = mediaType == 'movie'
+          ? ApiEndpoints.tmdbCreditsMovie
+          : ApiEndpoints.tmdbCreditsTV;
+      final path = ApiEndpoints.formatUrl(template, [id]);
+      final response = await _client.get(
+        path,
+        queryParameters: {'language': 'zh-CN'},
+      );
+      if (response.data is Map<String, dynamic>) {
+        return response.data as Map<String, dynamic>;
+      }
+      return null;
+    } catch (e) {
+      KazumiLogger().e('获取 TMDB 演职人员失败：$id', error: e);
+      return null;
+    }
+  }
+
+  /// 获取评论
+  static Future<Map<String, dynamic>?> getReviews(int id, {String mediaType = 'tv'}) async {
+    try {
+      final template = mediaType == 'movie'
+          ? ApiEndpoints.tmdbReviewsMovie
+          : ApiEndpoints.tmdbReviewsTV;
+      final path = ApiEndpoints.formatUrl(template, [id]);
+      final response = await _client.get(
+        path,
+        queryParameters: {'language': 'zh-CN'},
+      );
+      if (response.data is Map<String, dynamic>) {
+        return response.data as Map<String, dynamic>;
+      }
+      return null;
+    } catch (e) {
+      KazumiLogger().e('获取 TMDB 评论失败：$id', error: e);
+      return null;
+    }
+  }
+
   /// 获取分类 ID
   static int _getGenreId(String category) {
     const genreMap = {
@@ -307,11 +349,12 @@ class TMDBApi {
   /// 获取详情
   static Future<TMDBItem?> getDetail(int id, {String mediaType = 'tv'}) async {
     try {
-      final endpoint = mediaType == 'movie'
+      final template = mediaType == 'movie'
           ? ApiEndpoints.tmdbMovieDetail
           : ApiEndpoints.tmdbDetail;
+      final path = ApiEndpoints.formatUrl(template, [id]);
       final response = await _client.get(
-        endpoint,
+        path,
         queryParameters: {
           'append_to_response': 'translations',
         },

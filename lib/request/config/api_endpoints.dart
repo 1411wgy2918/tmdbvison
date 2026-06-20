@@ -166,6 +166,14 @@ class ApiEndpoints {
   /// TMDB 正在上映
   static const String tmdbNowPlaying = '/movie/now_playing';
 
+  /// TMDB 演职人员 (cast + crew)
+  static const String tmdbCreditsTV = '/tv/{0}/credits';
+  static const String tmdbCreditsMovie = '/movie/{0}/credits';
+
+  /// TMDB 评论
+  static const String tmdbReviewsTV = '/tv/{0}/reviews';
+  static const String tmdbReviewsMovie = '/movie/{0}/reviews';
+
   static String formatUrl(String url, List<dynamic> params) {
     for (int i = 0; i < params.length; i++) {
       url = url.replaceAll('{$i}', params[i].toString());
