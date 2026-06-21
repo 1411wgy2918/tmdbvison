@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kazumi/utils/constants.dart';
 import 'package:kazumi/bean/card/bangumi_card.dart';
 import 'package:kazumi/modules/bangumi/data_source_type.dart';
+import 'package:kazumi/services/data_source/data_source_resolver_pool.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:kazumi/bean/widget/error_widget.dart';
 import 'package:kazumi/pages/search/search_controller.dart';
@@ -36,6 +37,10 @@ class _SearchPageState extends State<SearchPage> {
   void initState() {
     super.initState();
     scrollController.addListener(scrollListener);
+    DataSourceResolverPool.loadDefaultSource();
+    if (DataSourceResolverPool.currentSource != searchPageController.currentDataSource) {
+      searchPageController.setDataSource(DataSourceResolverPool.currentSource);
+    }
     searchPageController.loadSearchHistories();
     if (widget.inputTag != '') {
       WidgetsBinding.instance.addPostFrameCallback((_) {

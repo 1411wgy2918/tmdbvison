@@ -57,9 +57,8 @@ abstract class _SearchPageController with Store {
   @action
   void setDataSource(DataSourceType source) {
     currentDataSource = source;
+    DataSourceResolverPool.setDataSource(source);
     bangumiList.clear();
-    // 如果有搜索词，重新搜索
-    // 这个方法由 SearchPage 调用
   }
 
   @action

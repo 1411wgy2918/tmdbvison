@@ -32,6 +32,7 @@ class InfoTabView extends StatefulWidget {
     required this.characterList,
     required this.staffList,
     required this.isLoading,
+    this.isTMDB = false,
   });
 
   final bool commentsQueryTimeout;
@@ -51,6 +52,7 @@ class InfoTabView extends StatefulWidget {
   final List<CharacterItem> characterList;
   final List<StaffFullItem> staffList;
   final bool isLoading;
+  final bool isTMDB;
 
   @override
   State<InfoTabView> createState() => _InfoTabViewState();
@@ -66,7 +68,8 @@ class _InfoTabViewState extends State<InfoTabView>
   void initState() {
     super.initState();
     widget.tabController.addListener(_onTabChanged);
-    if (widget.tabController.index == 1) {
+    if (widget.tabController.index == 1 ||
+        (widget.isTMDB && widget.tabController.index == 3)) {
       widget.onCommentsTabSelected?.call();
     }
   }
@@ -79,6 +82,9 @@ class _InfoTabViewState extends State<InfoTabView>
 
   void _onTabChanged() {
     if (widget.tabController.index == 1) {
+      widget.onCommentsTabSelected?.call();
+    }
+    if (widget.isTMDB && widget.tabController.index == 3) {
       widget.onCommentsTabSelected?.call();
     }
   }
@@ -572,18 +578,20 @@ class _InfoTabViewState extends State<InfoTabView>
         charactersListBody,
         Builder(
           builder: (BuildContext context) {
+            if (widget.isTMDB) {
+              return commentsListBody;
+            }
             return CustomScrollView(
               scrollBehavior: const ScrollBehavior().copyWith(
                 scrollbars: false,
               ),
-              key: PageStorageKey<String>('评论'),
+              key: const PageStorageKey<String>('评论'),
               slivers: <Widget>[
                 SliverOverlapInjector(
                   handle:
                       NestedScrollView.sliverOverlapAbsorberHandleFor(context),
                 ),
-                // TODO: 评论区
-                SliverFillRemaining(
+                const SliverFillRemaining(
                   child: Center(child: Text('施工中')),
                 ),
               ],

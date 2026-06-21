@@ -232,11 +232,15 @@ class _BangumiInfoCardVState extends State<BangumiInfoCardV> {
                               ),
                             SizedBox(height: 8),
                             Text(
-                              'Bangumi Ranked:',
+                              widget.bangumiItem.type >= 98
+                                  ? 'TMDB Score:'
+                                  : 'Bangumi Ranked:',
                             ),
                             Text(
                               widget.showRating
-                                  ? '#${widget.bangumiItem.rank}'
+                                  ? widget.bangumiItem.type >= 98
+                                      ? '${widget.bangumiItem.ratingScore}'
+                                      : '#${widget.bangumiItem.rank}'
                                   : '***',
                               style: TextStyle(
                                 fontSize: 20,

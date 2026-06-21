@@ -348,7 +348,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     final bool showWindowButton =
         GStorage.getSetting(SettingsKeys.showWindowButton);
-    final bool showRatingFab = _fabTabIndex == _commentsTabIndex;
+    final bool showRatingFab = _fabTabIndex == _commentsTabIndex && !_isTMDB();
     return PopScope(
       canPop: true,
       child: DefaultTabController(
@@ -503,6 +503,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
                 characterList: infoController.characterList,
                 staffList: infoController.staffList,
                 isLoading: showBangumiInfoSkeleton,
+                isTMDB: _isTMDB(),
               );
             }),
           ),

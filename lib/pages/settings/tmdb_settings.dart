@@ -1,5 +1,6 @@
 import 'package:card_settings_ui/card_settings_ui.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kazumi/bean/appbar/sys_app_bar.dart';
 import 'package:kazumi/bean/dialog/dialog_helper.dart';
 import 'package:kazumi/request/clients/tmdb_client.dart';
@@ -121,6 +122,17 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
                       labelText: 'TMDB API Key',
                       border: const OutlineInputBorder(),
                       hintText: '输入您的 TMDB API Key',
+                      prefixIcon: IconButton(
+                        onPressed: () async {
+                          final data =
+                              await Clipboard.getData(Clipboard.kTextPlain);
+                          if (data?.text != null && data!.text!.isNotEmpty) {
+                            tmdbApiKeyController.text = data.text!;
+                          }
+                        },
+                        tooltip: '粘贴',
+                        icon: const Icon(Icons.paste_rounded),
+                      ),
                       suffixIcon: IconButton(
                         onPressed: () {
                           setState(() {
