@@ -1,11 +1,11 @@
 {
-    "name": "Kazumi TMDB",
-    "short_name": "Kazumi TMDB",
+    "name": "TMDBvision",
+    "short_name": "TMDBvision",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Kazumi TMDB - 动漫追番管理工具，支持 Bangumi 和 TMDB 双数据源",
+    "description": "TMDBvision - 基于 TMDB 数据的动漫追番管理工具",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.predidit.kazumi.tmdb" "\0"
-            VALUE "FileDescription", "Kazumi TMDB" "\0"
+            VALUE "FileDescription", "TMDBvision" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "kazumi_tmdb" "\0"
+            VALUE "InternalName", "TMDBvision" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.predidit.kazumi.tmdb. All rights reserved." "\0"
-            VALUE "OriginalFilename", "kazumi_tmdb.exe" "\0"
-            VALUE "ProductName", "Kazumi TMDB" "\0"
+            VALUE "OriginalFilename", "TMDBvision.exe" "\0"
+            VALUE "ProductName", "TMDBvision" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
