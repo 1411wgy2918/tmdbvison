@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 /// TMDB API 客户端异常
 class TMDBApiException implements Exception {

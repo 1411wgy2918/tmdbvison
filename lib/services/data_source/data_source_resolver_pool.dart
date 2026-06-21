@@ -1,11 +1,11 @@
-import 'package:kazumi/modules/bangumi/data_source_type.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
-import 'package:kazumi/request/apis/tmdb_api.dart';
-import 'package:kazumi/modules/bangumi/tmdb_item.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/utils/constants.dart';
+import 'package:kazumi_tmdb/modules/bangumi/data_source_type.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/request/apis/tmdb_api.dart';
+import 'package:kazumi_tmdb/modules/bangumi/tmdb_item.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
 
 /// 数据源解析器池
 ///

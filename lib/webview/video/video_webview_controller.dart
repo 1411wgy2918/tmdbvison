@@ -1,12 +1,12 @@
 import 'dart:io';
 import 'dart:async';
 
-import 'package:kazumi/webview/video/impl/video_webview_android_impl.dart';
-import 'package:kazumi/webview/video/impl/video_webview_impl.dart';
-import 'package:kazumi/webview/video/impl/video_webview_windows_impl.dart';
-import 'package:kazumi/webview/video/impl/video_webview_linux_impl.dart';
-import 'package:kazumi/webview/video/impl/video_webview_apple_impl.dart';
-import 'package:kazumi/services/platform/webview_feature_service.dart';
+import 'package:kazumi_tmdb/webview/video/impl/video_webview_android_impl.dart';
+import 'package:kazumi_tmdb/webview/video/impl/video_webview_impl.dart';
+import 'package:kazumi_tmdb/webview/video/impl/video_webview_windows_impl.dart';
+import 'package:kazumi_tmdb/webview/video/impl/video_webview_linux_impl.dart';
+import 'package:kazumi_tmdb/webview/video/impl/video_webview_apple_impl.dart';
+import 'package:kazumi_tmdb/services/platform/webview_feature_service.dart';
 
 abstract class VideoWebviewController<T> {
   // WebView controller.

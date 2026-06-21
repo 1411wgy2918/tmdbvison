@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/request/core/dio_factory.dart';
-import 'package:kazumi/request/core/network_error_mapper.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/request/core/dio_factory.dart';
+import 'package:kazumi_tmdb/request/core/network_error_mapper.dart';
 
 class GithubClient {
   GithubClient._();

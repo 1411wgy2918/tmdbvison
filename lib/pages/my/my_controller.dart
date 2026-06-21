@@ -1,8 +1,8 @@
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:mobx/mobx.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/services/update/auto_updater.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/update/auto_updater.dart';
 
 part 'my_controller.g.dart';
 

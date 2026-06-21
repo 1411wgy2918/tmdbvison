@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:desktop_webview_window/desktop_webview_window.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/services/network/proxy_utils.dart';
-import 'package:kazumi/webview/captcha/captcha_webview_controller.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/network/proxy_utils.dart';
+import 'package:kazumi_tmdb/webview/captcha/captcha_webview_controller.dart';
 
 class CaptchaWebviewLinuxImpl extends CaptchaWebviewController<Webview> {
   VoidCallback? _navigationListener;

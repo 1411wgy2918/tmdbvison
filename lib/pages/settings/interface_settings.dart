@@ -2,8 +2,8 @@ import 'package:card_settings_ui/list/settings_list.dart';
 import 'package:card_settings_ui/section/settings_section.dart';
 import 'package:card_settings_ui/tile/settings_tile.dart';
 import 'package:flutter/material.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 
 class InterfaceSettingsPage extends StatefulWidget {
   const InterfaceSettingsPage({super.key});

@@ -2,12 +2,12 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/bean/card/episode_comments_card.dart';
-import 'package:kazumi/bean/widget/error_widget.dart';
-import 'package:kazumi/modules/bangumi/episode_item.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/bean/card/episode_comments_card.dart';
+import 'package:kazumi_tmdb/bean/widget/error_widget.dart';
+import 'package:kazumi_tmdb/modules/bangumi/episode_item.dart';
+import 'package:kazumi_tmdb/pages/video/video_controller.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
 
 class EpisodeInfoWidget extends InheritedWidget {
   const EpisodeInfoWidget(

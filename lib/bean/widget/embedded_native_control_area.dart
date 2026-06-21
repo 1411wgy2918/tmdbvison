@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 
 class EmbeddedNativeControlArea extends StatefulWidget {
   /// The widget won't draw anything, just a placeholder for native window control.

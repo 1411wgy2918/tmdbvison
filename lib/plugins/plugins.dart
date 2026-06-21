@@ -1,15 +1,15 @@
 import 'package:dio/dio.dart';
-import 'package:kazumi/modules/search/plugin_search_module.dart';
-import 'package:kazumi/modules/roads/road_module.dart';
-import 'package:kazumi/request/clients/plugin_site_client.dart';
+import 'package:kazumi_tmdb/modules/search/plugin_search_module.dart';
+import 'package:kazumi_tmdb/modules/roads/road_module.dart';
+import 'package:kazumi_tmdb/request/clients/plugin_site_client.dart';
 import 'package:html/dom.dart' show Element;
 import 'package:html/parser.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:xpath_selector_html_parser/xpath_selector_html_parser.dart';
-import 'package:kazumi/plugins/anti_crawler_config.dart';
-import 'package:kazumi/services/plugin/plugin_cookie_manager.dart';
-import 'package:kazumi/utils/http_headers.dart';
+import 'package:kazumi_tmdb/plugins/anti_crawler_config.dart';
+import 'package:kazumi_tmdb/services/plugin/plugin_cookie_manager.dart';
+import 'package:kazumi_tmdb/utils/http_headers.dart';
 
 /// Thrown by [Plugin.queryBangumi] when the response contains a CAPTCHA challenge
 /// (i.e. the [AntiCrawlerConfig.captchaImage] XPath selector matches something

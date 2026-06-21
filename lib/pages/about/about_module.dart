@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/pages/about/about_page.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/pages/about/about_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class AboutModule extends Module {

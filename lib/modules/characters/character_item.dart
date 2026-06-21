@@ -1,4 +1,4 @@
-import 'package:kazumi/modules/characters/actor_item.dart';
+import 'package:kazumi_tmdb/modules/characters/actor_item.dart';
 
 class CharacterAvator {
   final String small;

@@ -1,18 +1,18 @@
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/modules/bangumi/bangumi_interest.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/pages/collect/collect_controller.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_interest.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/pages/collect/collect_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/modules/search/plugin_search_module.dart';
-import 'package:kazumi/pages/info/rating_review_dialog.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
-import 'package:kazumi/request/apis/tmdb_api.dart';
-import 'package:kazumi/modules/bangumi/tmdb_converter.dart';
+import 'package:kazumi_tmdb/modules/search/plugin_search_module.dart';
+import 'package:kazumi_tmdb/pages/info/rating_review_dialog.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/request/apis/tmdb_api.dart';
+import 'package:kazumi_tmdb/modules/bangumi/tmdb_converter.dart';
 import 'package:mobx/mobx.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
-import 'package:kazumi/modules/characters/character_item.dart';
-import 'package:kazumi/modules/staff/staff_item.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/modules/characters/character_item.dart';
+import 'package:kazumi_tmdb/modules/staff/staff_item.dart';
 
 part 'info_controller.g.dart';
 

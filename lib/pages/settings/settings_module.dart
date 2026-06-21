@@ -1,22 +1,22 @@
-import 'package:kazumi/pages/settings/danmaku/danmaku_module.dart';
-import 'package:kazumi/pages/about/about_module.dart';
-import 'package:kazumi/pages/plugin_editor/plugin_module.dart';
+import 'package:kazumi_tmdb/pages/settings/danmaku/danmaku_module.dart';
+import 'package:kazumi_tmdb/pages/about/about_module.dart';
+import 'package:kazumi_tmdb/pages/plugin_editor/plugin_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/history/history_module.dart';
-import 'package:kazumi/pages/settings/interface_settings.dart';
-import 'package:kazumi/pages/settings/theme_settings_page.dart';
-import 'package:kazumi/pages/settings/player_settings.dart';
-import 'package:kazumi/pages/settings/displaymode_settings.dart';
-import 'package:kazumi/pages/settings/decoder_settings.dart';
-import 'package:kazumi/pages/settings/renderer_settings.dart';
-import 'package:kazumi/pages/settings/super_resolution_settings.dart';
-import 'package:kazumi/pages/settings/proxy/proxy_module.dart';
-import 'package:kazumi/pages/webdav_editor/webdav_module.dart';
-import 'package:kazumi/pages/settings/keyboard_settings.dart';
-import 'package:kazumi/pages/settings/download_settings.dart';
-import 'package:kazumi/pages/download/download_page_module.dart';
-import 'package:kazumi/pages/bangumi/bangumi_module.dart';
-import 'package:kazumi/pages/settings/tmdb_settings.dart';
+import 'package:kazumi_tmdb/pages/history/history_module.dart';
+import 'package:kazumi_tmdb/pages/settings/interface_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/theme_settings_page.dart';
+import 'package:kazumi_tmdb/pages/settings/player_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/displaymode_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/decoder_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/renderer_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/super_resolution_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/proxy/proxy_module.dart';
+import 'package:kazumi_tmdb/pages/webdav_editor/webdav_module.dart';
+import 'package:kazumi_tmdb/pages/settings/keyboard_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/download_settings.dart';
+import 'package:kazumi_tmdb/pages/download/download_page_module.dart';
+import 'package:kazumi_tmdb/pages/bangumi/bangumi_module.dart';
+import 'package:kazumi_tmdb/pages/settings/tmdb_settings.dart';
 
 class SettingsModule extends Module {
   @override

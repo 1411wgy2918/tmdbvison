@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/platform/platform_environment_service.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/platform/platform_environment_service.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 import 'package:window_manager/window_manager.dart';
 
 class DisplayModeService {

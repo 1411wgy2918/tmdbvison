@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 class ExternalPlayer {
   // 注意：仍需开发 iOS/Linux 设备的外部播放功能。

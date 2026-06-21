@@ -1,4 +1,4 @@
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
 
 import 'bangumi_collection_type.dart';
 

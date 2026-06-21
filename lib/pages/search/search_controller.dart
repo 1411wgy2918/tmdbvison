@@ -2,17 +2,17 @@ import 'dart:io';
 
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/bangumi/data_source_type.dart';
-import 'package:kazumi/modules/collect/collect_type.dart';
-import 'package:kazumi/modules/search/image_search_module.dart';
-import 'package:kazumi/modules/search/search_history_module.dart';
-import 'package:kazumi/repositories/collect_repository.dart';
-import 'package:kazumi/repositories/search_history_repository.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
-import 'package:kazumi/request/apis/trace_api.dart';
-import 'package:kazumi/services/data_source/data_source_resolver_pool.dart';
-import 'package:kazumi/utils/search_parser.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/data_source_type.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_type.dart';
+import 'package:kazumi_tmdb/modules/search/image_search_module.dart';
+import 'package:kazumi_tmdb/modules/search/search_history_module.dart';
+import 'package:kazumi_tmdb/repositories/collect_repository.dart';
+import 'package:kazumi_tmdb/repositories/search_history_repository.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/request/apis/trace_api.dart';
+import 'package:kazumi_tmdb/services/data_source/data_source_resolver_pool.dart';
+import 'package:kazumi_tmdb/utils/search_parser.dart';
 
 part 'search_controller.g.dart';
 

@@ -1,6 +1,6 @@
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/modules/search/search_history_module.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/search/search_history_module.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 /// 搜索历史数据访问接口
 ///

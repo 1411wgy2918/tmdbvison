@@ -1,7 +1,7 @@
-import 'package:kazumi/modules/characters/character_item.dart';
-import 'package:kazumi/modules/characters/actor_item.dart';
-import 'package:kazumi/modules/staff/staff_item.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/modules/characters/character_item.dart';
+import 'package:kazumi_tmdb/modules/characters/actor_item.dart';
+import 'package:kazumi_tmdb/modules/staff/staff_item.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
 
 class TMDBConverter {
   static const _tmdbImageBase = 'https://image.tmdb.org/t/p';

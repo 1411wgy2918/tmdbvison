@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
-import 'package:kazumi/modules/bangumi/data_source_type.dart';
-import 'package:kazumi/services/data_source/data_source_resolver_pool.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/bean/card/bangumi_card.dart';
+import 'package:kazumi_tmdb/modules/bangumi/data_source_type.dart';
+import 'package:kazumi_tmdb/services/data_source/data_source_resolver_pool.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:kazumi/bean/widget/error_widget.dart';
-import 'package:kazumi/pages/search/search_controller.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/bean/widget/error_widget.dart';
+import 'package:kazumi_tmdb/pages/search/search_controller.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class SearchPage extends StatefulWidget {

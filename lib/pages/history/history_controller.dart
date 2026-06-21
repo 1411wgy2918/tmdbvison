@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/history/history_module.dart';
-import 'package:kazumi/repositories/history_repository.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/history/history_module.dart';
+import 'package:kazumi_tmdb/repositories/history_repository.dart';
 import 'package:mobx/mobx.dart';
 
 part 'history_controller.g.dart';

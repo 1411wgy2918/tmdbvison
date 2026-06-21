@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:dio/io.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/network/proxy_utils.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/network/proxy_utils.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 
 class NetworkConfig {
   const NetworkConfig({

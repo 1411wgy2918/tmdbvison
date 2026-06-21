@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
 
 class KeyboardSettingsPage extends StatefulWidget {
   const KeyboardSettingsPage({super.key});

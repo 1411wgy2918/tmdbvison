@@ -1,21 +1,21 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:kazumi/app_module.dart';
-import 'package:kazumi/app_widget.dart';
+import 'package:kazumi_tmdb/app_module.dart';
+import 'package:kazumi_tmdb/app_widget.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/settings/theme_provider.dart';
+import 'package:kazumi_tmdb/bean/settings/theme_provider.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
-import 'package:kazumi/services/network/proxy_manager.dart';
+import 'package:kazumi_tmdb/services/network/proxy_manager.dart';
 import 'package:flutter/services.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/pages/error/storage_error_page.dart';
+import 'package:kazumi_tmdb/pages/error/storage_error_page.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:kazumi/utils/device.dart';
-import 'package:kazumi/services/platform/webview_feature_service.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
+import 'package:kazumi_tmdb/services/platform/webview_feature_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -77,7 +77,7 @@ void main() async {
           ? TitleBarStyle.hidden
           : TitleBarStyle.normal,
       windowButtonVisibility: showWindowButton,
-      title: 'Kazumi',
+      title: 'Kazumi TMDB',
     );
     windowManager.waitUntilReadyToShow(windowOptions, () async {
       // window_manager controls desktop visibility to avoid startup flicker.

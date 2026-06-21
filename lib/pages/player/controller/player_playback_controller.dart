@@ -4,20 +4,20 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter_volume_controller/flutter_volume_controller.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/pages/player/controller/player_debug_controller.dart';
-import 'package:kazumi/services/shaders/shader_asset_service.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/network/proxy_utils.dart';
-import 'package:kazumi/services/player/player_screenshot_service.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_debug_controller.dart';
+import 'package:kazumi_tmdb/services/shaders/shader_asset_service.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/network/proxy_utils.dart';
+import 'package:kazumi_tmdb/services/player/player_screenshot_service.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 import 'package:mobx/mobx.dart';
-import 'package:kazumi/utils/device.dart';
-import 'package:kazumi/utils/media.dart';
-import 'package:kazumi/services/platform/platform_environment_service.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
+import 'package:kazumi_tmdb/utils/media.dart';
+import 'package:kazumi_tmdb/services/platform/platform_environment_service.dart';
 
 part 'player_playback_controller.g.dart';
 

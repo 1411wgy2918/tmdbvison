@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:kazumi/utils/date_time.dart';
+import 'package:kazumi_tmdb/utils/date_time.dart';
 
 class CommentsCard extends StatelessWidget {
   CommentsCard({

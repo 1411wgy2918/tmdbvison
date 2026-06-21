@@ -1,6 +1,6 @@
-import 'package:kazumi/pages/video/video_page.dart';
+import 'package:kazumi_tmdb/pages/video/video_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/player/player_controller.dart';
+import 'package:kazumi_tmdb/pages/player/player_controller.dart';
 
 class VideoModule extends Module {
   @override

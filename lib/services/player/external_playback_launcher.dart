@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/services/player/external_player.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/services/player/external_player.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class ExternalPlaybackLauncher {

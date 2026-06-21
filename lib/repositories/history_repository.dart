@@ -1,8 +1,8 @@
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/history/history_module.dart';
-import 'package:kazumi/services/sync/history_sync_service.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/history/history_module.dart';
+import 'package:kazumi_tmdb/services/sync/history_sync_service.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 /// 历史记录数据访问接口
 ///

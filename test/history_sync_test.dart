@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/bangumi/bangumi_tag.dart';
-import 'package:kazumi/modules/history/history_module.dart';
-import 'package:kazumi/modules/history/history_sync.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_tag.dart';
+import 'package:kazumi_tmdb/modules/history/history_module.dart';
+import 'package:kazumi_tmdb/modules/history/history_sync.dart';
 
 void main() {
   group('HistorySyncDevice', () {

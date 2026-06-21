@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:kazumi/request/core/dio_factory.dart';
-import 'package:kazumi/request/core/network_error_mapper.dart';
-import 'package:kazumi/utils/dandan_credentials.dart';
-import 'package:kazumi/utils/http_headers.dart';
-import 'package:kazumi/utils/crypto.dart';
+import 'package:kazumi_tmdb/request/core/dio_factory.dart';
+import 'package:kazumi_tmdb/request/core/network_error_mapper.dart';
+import 'package:kazumi_tmdb/utils/dandan_credentials.dart';
+import 'package:kazumi_tmdb/utils/http_headers.dart';
+import 'package:kazumi_tmdb/utils/crypto.dart';
 
 class DanmakuClient {
   DanmakuClient._();

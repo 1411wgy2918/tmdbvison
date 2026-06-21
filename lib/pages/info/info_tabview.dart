@@ -1,16 +1,16 @@
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/widget/error_widget.dart';
-import 'package:kazumi/bean/card/comments_card.dart';
-import 'package:kazumi/bean/card/character_card.dart';
-import 'package:kazumi/bean/card/staff_card.dart';
+import 'package:kazumi_tmdb/bean/widget/error_widget.dart';
+import 'package:kazumi_tmdb/bean/card/comments_card.dart';
+import 'package:kazumi_tmdb/bean/card/character_card.dart';
+import 'package:kazumi_tmdb/bean/card/staff_card.dart';
 import 'package:skeletonizer/skeletonizer.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
-import 'package:kazumi/modules/characters/character_item.dart';
-import 'package:kazumi/modules/staff/staff_item.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/modules/characters/character_item.dart';
+import 'package:kazumi_tmdb/modules/staff/staff_item.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class InfoTabView extends StatefulWidget {
   const InfoTabView({

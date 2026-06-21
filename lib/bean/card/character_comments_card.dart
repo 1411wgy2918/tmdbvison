@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/bbcode/bbcode_widget.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
-import 'package:kazumi/utils/date_time.dart';
+import 'package:kazumi_tmdb/bbcode/bbcode_widget.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/utils/date_time.dart';
 
 class CharacterCommentsCard extends StatelessWidget {
   const CharacterCommentsCard({

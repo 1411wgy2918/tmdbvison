@@ -1,8 +1,8 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/popular/popular_module.dart';
-import 'package:kazumi/pages/my/my_module.dart';
-import 'package:kazumi/pages/timeline/timeline_module.dart';
-import 'package:kazumi/pages/collect/collect_module.dart';
+import 'package:kazumi_tmdb/pages/popular/popular_module.dart';
+import 'package:kazumi_tmdb/pages/my/my_module.dart';
+import 'package:kazumi_tmdb/pages/timeline/timeline_module.dart';
+import 'package:kazumi_tmdb/pages/collect/collect_module.dart';
 
 class MenuRouteItem {
   final String path;

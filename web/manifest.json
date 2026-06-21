@@ -1,11 +1,11 @@
 {
-    "name": "kazumi",
-    "short_name": "kazumi",
+    "name": "Kazumi TMDB",
+    "short_name": "Kazumi TMDB",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Kazumi TMDB - 动漫追番管理工具，支持 Bangumi 和 TMDB 双数据源",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

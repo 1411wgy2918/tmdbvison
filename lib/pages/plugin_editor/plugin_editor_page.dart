@@ -2,10 +2,10 @@ import 'package:card_settings_ui/card_settings_ui.dart';
 import 'package:card_settings_ui/tile/settings_tile_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/plugins/plugins.dart';
-import 'package:kazumi/plugins/anti_crawler_config.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/plugins/plugins.dart';
+import 'package:kazumi_tmdb/plugins/anti_crawler_config.dart';
+import 'package:kazumi_tmdb/plugins/plugins_controller.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
 
 class PluginEditorPage extends StatefulWidget {
   const PluginEditorPage({

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/pages/timeline/timeline_controller.dart';
-import 'package:kazumi/bean/card/bangumi_timeline_card.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/pages/menu/menu.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/pages/timeline/timeline_controller.dart';
+import 'package:kazumi_tmdb/bean/card/bangumi_timeline_card.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/utils/anime_season.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/bean/widget/bangumi_mirror_error_widget.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/utils/anime_season.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/bean/widget/bangumi_mirror_error_widget.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class TimelinePage extends StatefulWidget {
   const TimelinePage({super.key});

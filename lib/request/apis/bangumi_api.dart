@@ -1,18 +1,18 @@
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/request/clients/bangumi_client.dart';
-import 'package:kazumi/request/core/network_exception.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/comments/comment_response.dart';
-import 'package:kazumi/modules/characters/characters_response.dart';
-import 'package:kazumi/modules/bangumi/episode_item.dart';
-import 'package:kazumi/modules/character/character_full_item.dart';
-import 'package:kazumi/modules/staff/staff_response.dart';
-import 'package:kazumi/modules/bangumi/bangumi_collection.dart';
-import 'package:kazumi/modules/collect/collect_type.dart';
-import 'package:kazumi/modules/collect/collect_type_mapper.dart';
-import 'package:kazumi/modules/bangumi/bangumi_collection_type.dart';
-import 'package:kazumi/modules/comments/comment_item.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/request/clients/bangumi_client.dart';
+import 'package:kazumi_tmdb/request/core/network_exception.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_response.dart';
+import 'package:kazumi_tmdb/modules/characters/characters_response.dart';
+import 'package:kazumi_tmdb/modules/bangumi/episode_item.dart';
+import 'package:kazumi_tmdb/modules/character/character_full_item.dart';
+import 'package:kazumi_tmdb/modules/staff/staff_response.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_collection.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_type.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_type_mapper.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_collection_type.dart';
+import 'package:kazumi_tmdb/modules/comments/comment_item.dart';
 
 class BangumiApi {
   static final BangumiClient _client = BangumiClient.instance;

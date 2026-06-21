@@ -1,11 +1,11 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/bangumi/data_source_type.dart';
-import 'package:kazumi/services/data_source/data_source_resolver_pool.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/utils/constants.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/data_source_type.dart';
+import 'package:kazumi_tmdb/services/data_source/data_source_resolver_pool.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
 import 'package:mobx/mobx.dart';
 
 part 'popular_controller.g.dart';

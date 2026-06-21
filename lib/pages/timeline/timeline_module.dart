@@ -1,4 +1,4 @@
-import 'package:kazumi/pages/timeline/timeline_page.dart';
+import 'package:kazumi_tmdb/pages/timeline/timeline_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class TimelineModule extends Module {

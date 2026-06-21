@@ -1,7 +1,7 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
 
 class StyleString {
   static const double cardSpace = 8;

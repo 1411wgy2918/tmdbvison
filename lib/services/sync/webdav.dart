@@ -4,12 +4,12 @@ import 'dart:async';
 import 'dart:typed_data';
 import 'package:webdav_client/webdav_client.dart' as webdav;
 import 'package:path_provider/path_provider.dart';
-import 'package:kazumi/modules/history/history_sync.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/modules/collect/collect_module.dart';
-import 'package:kazumi/modules/collect/collect_change_module.dart';
-import 'package:kazumi/services/sync/history_sync_service.dart';
+import 'package:kazumi_tmdb/modules/history/history_sync.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_module.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_change_module.dart';
+import 'package:kazumi_tmdb/services/sync/history_sync_service.dart';
 
 class WebDav {
   static const String _syncRootPath = '/kazumiSync';

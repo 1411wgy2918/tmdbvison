@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/modules/characters/character_item.dart';
-import 'package:kazumi/pages/info/character_page.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/modules/characters/character_item.dart';
+import 'package:kazumi_tmdb/pages/info/character_page.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class CharacterCard extends StatelessWidget {
   const CharacterCard({

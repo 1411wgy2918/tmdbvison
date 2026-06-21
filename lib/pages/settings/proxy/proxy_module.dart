@@ -1,5 +1,5 @@
-import 'package:kazumi/pages/settings/proxy/proxy_settings_page.dart';
-import 'package:kazumi/pages/settings/proxy/proxy_editor_page.dart';
+import 'package:kazumi_tmdb/pages/settings/proxy/proxy_settings_page.dart';
+import 'package:kazumi_tmdb/pages/settings/proxy/proxy_editor_page.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class ProxyModule extends Module {

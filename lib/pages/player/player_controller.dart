@@ -4,19 +4,19 @@ import 'dart:typed_data';
 import 'package:flutter_volume_controller/flutter_volume_controller.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/services/player/external_playback_launcher.dart';
-import 'package:kazumi/pages/player/controller/player_danmaku_controller.dart';
-import 'package:kazumi/pages/player/controller/player_debug_controller.dart';
-import 'package:kazumi/pages/player/controller/player_models.dart';
-import 'package:kazumi/pages/player/controller/player_panel_controller.dart';
-import 'package:kazumi/pages/player/controller/player_playback_controller.dart';
-import 'package:kazumi/pages/player/controller/player_syncplay_controller.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/shaders/shader_asset_service.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/services/player/external_playback_launcher.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_danmaku_controller.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_debug_controller.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_models.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_panel_controller.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_playback_controller.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_syncplay_controller.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/shaders/shader_asset_service.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
-export 'package:kazumi/pages/player/controller/player_models.dart';
+export 'package:kazumi_tmdb/pages/player/controller/player_models.dart';
 
 class PlayerController {
   final ShaderAssetService shaderAssetService =

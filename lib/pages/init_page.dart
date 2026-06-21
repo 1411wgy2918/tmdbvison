@@ -1,22 +1,22 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/pages/my/my_controller.dart';
-import 'package:kazumi/services/sync/bangumi_sync_service.dart';
-import 'package:kazumi/services/sync/webdav.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/pages/my/my_controller.dart';
+import 'package:kazumi_tmdb/services/sync/bangumi_sync_service.dart';
+import 'package:kazumi_tmdb/services/sync/webdav.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/plugins/plugins_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/collect/collect_controller.dart';
+import 'package:kazumi_tmdb/pages/collect/collect_controller.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/bean/settings/theme_provider.dart';
-import 'package:kazumi/services/shaders/shader_asset_service.dart';
-import 'package:kazumi/pages/download/download_controller.dart';
-import 'package:kazumi/services/download/background_download_service.dart';
-import 'package:kazumi/services/platform/windows_shortcut.dart';
-import 'package:kazumi/services/platform/platform_environment_service.dart';
+import 'package:kazumi_tmdb/bean/settings/theme_provider.dart';
+import 'package:kazumi_tmdb/services/shaders/shader_asset_service.dart';
+import 'package:kazumi_tmdb/pages/download/download_controller.dart';
+import 'package:kazumi_tmdb/services/download/background_download_service.dart';
+import 'package:kazumi_tmdb/services/platform/windows_shortcut.dart';
+import 'package:kazumi_tmdb/services/platform/platform_environment_service.dart';
 
 class InitPage extends StatefulWidget {
   const InitPage({super.key});

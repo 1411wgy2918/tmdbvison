@@ -1,7 +1,7 @@
-import 'package:kazumi/request/clients/tmdb_client.dart';
-import 'package:kazumi/modules/bangumi/tmdb_item.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/request/clients/tmdb_client.dart';
+import 'package:kazumi_tmdb/modules/bangumi/tmdb_item.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 /// TMDB API 服务
 class TMDBApi {

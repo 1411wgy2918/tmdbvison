@@ -1,6 +1,6 @@
-import 'package:kazumi/pages/settings/danmaku/danmaku_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/danmaku/danmaku_settings.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/settings/danmaku/danmaku_shield_settings.dart';
+import 'package:kazumi_tmdb/pages/settings/danmaku/danmaku_shield_settings.dart';
 
 class DanmakuModule extends Module {
   @override

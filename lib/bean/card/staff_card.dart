@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kazumi/modules/staff/staff_item.dart';
+import 'package:kazumi_tmdb/modules/staff/staff_item.dart';
 
 class StaffCard extends StatelessWidget {
   const StaffCard({

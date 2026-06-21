@@ -1,5 +1,5 @@
 import 'package:hive_ce/hive.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
 
 part 'history_module.g.dart';
 

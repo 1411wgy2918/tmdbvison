@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:kazumi/request/core/dio_factory.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/network/proxy_aware_image_cache_manager.dart';
+import 'package:kazumi_tmdb/request/core/dio_factory.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/network/proxy_aware_image_cache_manager.dart';
 
 /// 代理管理器
 /// 统一管理 Dio HTTP 请求和 cached_network_image 的代理设置

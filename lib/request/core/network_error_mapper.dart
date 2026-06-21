@@ -1,6 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
-import 'package:kazumi/request/core/network_exception.dart';
+import 'package:kazumi_tmdb/request/core/network_exception.dart';
 
 class NetworkRequestExtra {
   const NetworkRequestExtra._();

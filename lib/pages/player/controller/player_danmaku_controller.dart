@@ -2,14 +2,14 @@
 
 import 'package:canvas_danmaku/canvas_danmaku.dart' as canvas;
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/modules/danmaku/danmaku_module.dart';
-import 'package:kazumi/pages/player/controller/player_models.dart';
-import 'package:kazumi/pages/download/download_controller.dart';
-import 'package:kazumi/request/apis/danmaku_api.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/danmaku/danmaku_module.dart';
+import 'package:kazumi_tmdb/pages/player/controller/player_models.dart';
+import 'package:kazumi_tmdb/pages/download/download_controller.dart';
+import 'package:kazumi_tmdb/request/apis/danmaku_api.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:mobx/mobx.dart';
-import 'package:kazumi/utils/danmaku.dart';
+import 'package:kazumi_tmdb/utils/danmaku.dart';
 
 part 'player_danmaku_controller.g.dart';
 

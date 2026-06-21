@@ -1,10 +1,10 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/request/apis/bangumi_api.dart';
-import 'package:kazumi/utils/anime_season.dart';
-import 'package:kazumi/repositories/collect_repository.dart';
-import 'package:kazumi/modules/collect/collect_type.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/request/apis/bangumi_api.dart';
+import 'package:kazumi_tmdb/utils/anime_season.dart';
+import 'package:kazumi_tmdb/repositories/collect_repository.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_type.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:mobx/mobx.dart';
 
 part 'timeline_controller.g.dart';

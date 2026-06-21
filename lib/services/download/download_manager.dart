@@ -2,14 +2,14 @@ import 'dart:async';
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/services.dart';
-import 'package:kazumi/modules/download/download_module.dart';
-import 'package:kazumi/request/clients/download_http_client.dart';
-import 'package:kazumi/request/core/network_exception.dart';
-import 'package:kazumi/utils/m3u8_parser.dart';
-import 'package:kazumi/utils/m3u8_ad_filter.dart';
-import 'package:kazumi/utils/format.dart' as fmt;
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/download/download_module.dart';
+import 'package:kazumi_tmdb/request/clients/download_http_client.dart';
+import 'package:kazumi_tmdb/request/core/network_exception.dart';
+import 'package:kazumi_tmdb/utils/m3u8_parser.dart';
+import 'package:kazumi_tmdb/utils/m3u8_ad_filter.dart';
+import 'package:kazumi_tmdb/utils/format.dart' as fmt;
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:path_provider/path_provider.dart';
 
 class _NotM3u8Exception implements Exception {

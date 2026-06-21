@@ -1,22 +1,22 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/bean/widget/bangumi_mirror_error_widget.dart';
-import 'package:kazumi/bean/widget/custom_dropdown_menu.dart';
-import 'package:kazumi/pages/popular/popular_controller.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/modules/bangumi/data_source_type.dart';
-import 'package:kazumi/services/data_source/data_source_resolver_pool.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/bean/widget/bangumi_mirror_error_widget.dart';
+import 'package:kazumi_tmdb/bean/widget/custom_dropdown_menu.dart';
+import 'package:kazumi_tmdb/pages/popular/popular_controller.dart';
+import 'package:kazumi_tmdb/bean/card/bangumi_card.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/modules/bangumi/data_source_type.dart';
+import 'package:kazumi_tmdb/services/data_source/data_source_resolver_pool.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter/services.dart';
 import 'package:window_manager/window_manager.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/bean/appbar/drag_to_move_bar.dart' as dtb;
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/pages/menu/menu.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/bean/appbar/drag_to_move_bar.dart' as dtb;
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class PopularPage extends StatefulWidget {
   const PopularPage({super.key});

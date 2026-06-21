@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:kazumi/modules/search/plugin_search_module.dart';
-import 'package:kazumi/plugins/plugins.dart';
+import 'package:kazumi_tmdb/modules/search/plugin_search_module.dart';
+import 'package:kazumi_tmdb/plugins/plugins.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/info/info_controller.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/pages/info/info_controller.dart';
+import 'package:kazumi_tmdb/plugins/plugins_controller.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 class PluginSearchService {
   PluginSearchService({

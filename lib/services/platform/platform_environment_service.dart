@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 class PlatformEnvironmentService {
   PlatformEnvironmentService._();

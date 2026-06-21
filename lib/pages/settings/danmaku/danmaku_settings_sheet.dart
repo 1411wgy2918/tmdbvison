@@ -1,9 +1,9 @@
 import 'package:canvas_danmaku/canvas_danmaku.dart';
 import 'package:flutter/material.dart';
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/pages/settings/danmaku/danmaku_shield_settings_sheet.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/pages/settings/danmaku/danmaku_shield_settings_sheet.dart';
 import 'package:card_settings_ui/card_settings_ui.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class DanmakuSettingsSheet extends StatefulWidget {
   final DanmakuController danmakuController;

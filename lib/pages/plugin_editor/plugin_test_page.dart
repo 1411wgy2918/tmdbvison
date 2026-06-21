@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart' hide Element;
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/modules/search/plugin_search_module.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/modules/search/plugin_search_module.dart';
+import 'package:kazumi_tmdb/pages/video/video_controller.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:html/dom.dart' show Element;
 import 'package:html/parser.dart' show parse;
 import 'package:xpath_selector_html_parser/xpath_selector_html_parser.dart';

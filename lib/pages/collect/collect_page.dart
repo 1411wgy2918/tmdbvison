@@ -1,19 +1,19 @@
 import 'dart:async';
 
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/modules/collect/collect_module.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_module.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/utils/constants.dart';
-import 'package:kazumi/pages/menu/menu.dart';
-import 'package:kazumi/bean/card/bangumi_card.dart';
-import 'package:kazumi/pages/collect/collect_controller.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
+import 'package:kazumi_tmdb/pages/menu/menu.dart';
+import 'package:kazumi_tmdb/bean/card/bangumi_card.dart';
+import 'package:kazumi_tmdb/pages/collect/collect_controller.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
 import 'package:provider/provider.dart';
-import 'package:kazumi/bean/widget/collect_button.dart';
-import 'package:kazumi/modules/collect/collect_sync_plan.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/bean/widget/collect_button.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_sync_plan.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 
 class CollectPage extends StatefulWidget {
   const CollectPage({super.key});

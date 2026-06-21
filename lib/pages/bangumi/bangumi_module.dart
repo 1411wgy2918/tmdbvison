@@ -1,4 +1,4 @@
-import 'package:kazumi/pages/bangumi/bangumi_setting.dart';
+import 'package:kazumi_tmdb/pages/bangumi/bangumi_setting.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class BangumiModule extends Module {

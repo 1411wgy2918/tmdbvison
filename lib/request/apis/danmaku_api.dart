@@ -1,10 +1,10 @@
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/request/clients/danmaku_client.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/modules/danmaku/danmaku_module.dart';
-import 'package:kazumi/modules/danmaku/danmaku_search_response.dart';
-import 'package:kazumi/modules/danmaku/danmaku_episode_response.dart';
-import 'package:kazumi/utils/string_similarity.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/request/clients/danmaku_client.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/modules/danmaku/danmaku_module.dart';
+import 'package:kazumi_tmdb/modules/danmaku/danmaku_search_response.dart';
+import 'package:kazumi_tmdb/modules/danmaku/danmaku_episode_response.dart';
+import 'package:kazumi_tmdb/utils/string_similarity.dart';
 
 class DanmakuApi {
   static final DanmakuClient _client = DanmakuClient.instance;

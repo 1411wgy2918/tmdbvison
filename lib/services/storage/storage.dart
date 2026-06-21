@@ -1,20 +1,20 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:hive_ce/hive.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:kazumi/modules/bangumi/bangumi_item.dart';
-import 'package:kazumi/modules/bangumi/bangumi_tag.dart';
-import 'package:kazumi/modules/history/history_module.dart';
-import 'package:kazumi/modules/collect/collect_module.dart';
-import 'package:kazumi/modules/collect/collect_change_module.dart';
-import 'package:kazumi/modules/collect/collect_sync_merger.dart';
-import 'package:kazumi/modules/search/search_history_module.dart';
-import 'package:kazumi/modules/download/download_module.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_item.dart';
+import 'package:kazumi_tmdb/modules/bangumi/bangumi_tag.dart';
+import 'package:kazumi_tmdb/modules/history/history_module.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_module.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_change_module.dart';
+import 'package:kazumi_tmdb/modules/collect/collect_sync_merger.dart';
+import 'package:kazumi_tmdb/modules/search/search_history_module.dart';
+import 'package:kazumi_tmdb/modules/download/download_module.dart';
 
 
-import 'package:kazumi/services/storage/settings_keys.dart';
-export 'package:kazumi/services/storage/settings_keys.dart';
+import 'package:kazumi_tmdb/services/storage/settings_keys.dart';
+export 'package:kazumi_tmdb/services/storage/settings_keys.dart';
 
 class GStorage {
   /// Don't use favorites box, it's replaced by collectibles.

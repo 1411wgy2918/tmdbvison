@@ -1,6 +1,6 @@
-import 'package:kazumi/services/storage/storage.dart';
-import 'package:kazumi/modules/download/download_module.dart';
-import 'package:kazumi/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/download/download_module.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
 
 abstract class IDownloadRepository {
   List<DownloadRecord> getAllRecords();

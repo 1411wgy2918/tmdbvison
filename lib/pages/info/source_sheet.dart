@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:kazumi/pages/info/info_controller.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/plugins/plugins_controller.dart';
-import 'package:kazumi/plugins/plugins.dart';
-import 'package:kazumi/pages/video/video_controller.dart';
+import 'package:kazumi_tmdb/pages/info/info_controller.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/plugins/plugins_controller.dart';
+import 'package:kazumi_tmdb/plugins/plugins.dart';
+import 'package:kazumi_tmdb/pages/video/video_controller.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:kazumi/services/plugin/plugin_search_service.dart';
-import 'package:kazumi/pages/collect/collect_controller.dart';
-import 'package:kazumi/bean/widget/error_widget.dart';
+import 'package:kazumi_tmdb/services/plugin/plugin_search_service.dart';
+import 'package:kazumi_tmdb/pages/collect/collect_controller.dart';
+import 'package:kazumi_tmdb/bean/widget/error_widget.dart';
 import 'dart:async';
 import 'dart:convert';
-import 'package:kazumi/services/plugin/captcha_verification_service.dart';
-import 'package:kazumi/plugins/anti_crawler_config.dart';
-import 'package:kazumi/utils/device.dart';
+import 'package:kazumi_tmdb/services/plugin/captcha_verification_service.dart';
+import 'package:kazumi_tmdb/plugins/anti_crawler_config.dart';
+import 'package:kazumi_tmdb/utils/device.dart';
 
 class SourceSheet extends StatefulWidget {
   const SourceSheet({

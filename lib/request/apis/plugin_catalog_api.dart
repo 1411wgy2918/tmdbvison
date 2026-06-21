@@ -1,9 +1,9 @@
 import 'dart:convert';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/request/config/api_endpoints.dart';
-import 'package:kazumi/request/clients/github_client.dart';
-import 'package:kazumi/plugins/plugins.dart';
-import 'package:kazumi/modules/plugin/plugin_http_module.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/request/config/api_endpoints.dart';
+import 'package:kazumi_tmdb/request/clients/github_client.dart';
+import 'package:kazumi_tmdb/plugins/plugins.dart';
+import 'package:kazumi_tmdb/modules/plugin/plugin_http_module.dart';
 
 class PluginCatalogApi {
   static final GithubClient _client = GithubClient.instance;

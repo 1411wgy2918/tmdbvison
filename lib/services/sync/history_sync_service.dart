@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:kazumi/modules/history/history_module.dart';
-import 'package:kazumi/modules/history/history_sync.dart';
-import 'package:kazumi/services/logging/logger.dart';
-import 'package:kazumi/services/storage/storage.dart';
+import 'package:kazumi_tmdb/modules/history/history_module.dart';
+import 'package:kazumi_tmdb/modules/history/history_sync.dart';
+import 'package:kazumi_tmdb/services/logging/logger.dart';
+import 'package:kazumi_tmdb/services/storage/storage.dart';
 import 'package:path_provider/path_provider.dart';
 
 class HistorySyncService {

@@ -4,14 +4,14 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:kazumi/bean/appbar/sys_app_bar.dart';
-import 'package:kazumi/bean/card/network_img_layer.dart';
-import 'package:kazumi/bean/dialog/dialog_helper.dart';
-import 'package:kazumi/modules/search/image_search_module.dart';
-import 'package:kazumi/pages/search/search_controller.dart';
-import 'package:kazumi/utils/constants.dart';
+import 'package:kazumi_tmdb/bean/appbar/sys_app_bar.dart';
+import 'package:kazumi_tmdb/bean/card/network_img_layer.dart';
+import 'package:kazumi_tmdb/bean/dialog/dialog_helper.dart';
+import 'package:kazumi_tmdb/modules/search/image_search_module.dart';
+import 'package:kazumi_tmdb/pages/search/search_controller.dart';
+import 'package:kazumi_tmdb/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:kazumi/utils/format.dart';
+import 'package:kazumi_tmdb/utils/format.dart';
 
 class ImageSearchPage extends StatefulWidget {
   const ImageSearchPage({super.key});
