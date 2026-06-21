@@ -276,53 +276,53 @@ class _RatingReviewDialogState extends State<RatingReviewDialog> {
     final child = !_isTagPanelOpen
         ? mainPane
         : SizedBox(
-          height: maxHeight,
-          child: Stack(
-            children: [
-              mainPane,
-              Positioned.fill(
-                child: TweenAnimationBuilder<double>(
-                  duration: _panelFadeDuration,
-                  curve: Curves.easeOutCubic,
-                  tween: Tween<double>(
-                    begin: _isTagPanelClosing ? 0.24 : 0,
-                    end: _isTagPanelClosing ? 0 : 0.24,
-                  ),
-                  builder: (context, opacity, child) {
-                    return ColoredBox(
-                      color: colorScheme.scrim.withValues(alpha: opacity),
-                      child: child,
-                    );
-                  },
-                  child: GestureDetector(
-                    behavior: HitTestBehavior.opaque,
-                    onTap: _closeTagSelection,
+            height: maxHeight,
+            child: Stack(
+              children: [
+                mainPane,
+                Positioned.fill(
+                  child: TweenAnimationBuilder<double>(
+                    duration: _panelFadeDuration,
+                    curve: Curves.easeOutCubic,
+                    tween: Tween<double>(
+                      begin: _isTagPanelClosing ? 0.24 : 0,
+                      end: _isTagPanelClosing ? 0 : 0.24,
+                    ),
+                    builder: (context, opacity, child) {
+                      return ColoredBox(
+                        color: colorScheme.scrim.withValues(alpha: opacity),
+                        child: child,
+                      );
+                    },
+                    child: GestureDetector(
+                      behavior: HitTestBehavior.opaque,
+                      onTap: _closeTagSelection,
+                    ),
                   ),
                 ),
-              ),
-              Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                child: TweenAnimationBuilder<double>(
-                  duration: _panelSlideDuration,
-                  curve: Curves.easeOutCubic,
-                  tween: Tween<double>(
-                    begin: _isTagPanelClosing ? 0 : 1,
-                    end: _isTagPanelClosing ? 1 : 0,
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: TweenAnimationBuilder<double>(
+                    duration: _panelSlideDuration,
+                    curve: Curves.easeOutCubic,
+                    tween: Tween<double>(
+                      begin: _isTagPanelClosing ? 0 : 1,
+                      end: _isTagPanelClosing ? 1 : 0,
+                    ),
+                    builder: (context, offset, child) {
+                      return Transform.translate(
+                        offset: Offset(0, offset * _compactTagPanelMaxHeight),
+                        child: child,
+                      );
+                    },
+                    child: _buildTagPanel(theme, isSidePanel: false),
                   ),
-                  builder: (context, offset, child) {
-                    return Transform.translate(
-                      offset: Offset(0, offset * _compactTagPanelMaxHeight),
-                      child: child,
-                    );
-                  },
-                  child: _buildTagPanel(theme, isSidePanel: false),
                 ),
-              ),
-            ],
-          ),
-        );
+              ],
+            ),
+          );
 
     return AnimatedSize(
       duration: _panelSlideDuration,
@@ -337,14 +337,12 @@ class _RatingReviewDialogState extends State<RatingReviewDialog> {
       child: Column(
         children: [
           _buildMainHeader(theme),
-
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
               child: _buildMainContent(theme),
             ),
           ),
-
           _buildActions(theme),
         ],
       ),

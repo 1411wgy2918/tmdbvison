@@ -45,9 +45,8 @@ class TMDBConverter {
       final characterName = (item['character'] as String?) ?? '';
       final actorName = (item['name'] as String?) ?? '';
       final profilePath = item['profile_path'] as String?;
-      final displayName = characterName.isNotEmpty
-          ? '$characterName ($actorName)'
-          : actorName;
+      final displayName =
+          characterName.isNotEmpty ? '$characterName ($actorName)' : actorName;
 
       return CharacterItem(
         id: (item['id'] as int?) ?? idx,
@@ -102,7 +101,8 @@ class TMDBConverter {
   static List<CommentItem> convertReviewsToCommentItems(List reviews) {
     return reviews.asMap().entries.map((entry) {
       final item = entry.value as Map<String, dynamic>;
-      final authorDetails = item['author_details'] as Map<String, dynamic>? ?? {};
+      final authorDetails =
+          item['author_details'] as Map<String, dynamic>? ?? {};
       final username = (authorDetails['username'] as String?) ?? '';
       final name = (authorDetails['name'] as String?) ?? username;
       final avatarPath = authorDetails['avatar_path'] as String?;

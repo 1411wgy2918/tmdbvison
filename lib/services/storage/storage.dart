@@ -12,7 +12,6 @@ import 'package:kazumi_tmdb/modules/collect/collect_sync_merger.dart';
 import 'package:kazumi_tmdb/modules/search/search_history_module.dart';
 import 'package:kazumi_tmdb/modules/download/download_module.dart';
 
-
 import 'package:kazumi_tmdb/services/storage/settings_keys.dart';
 export 'package:kazumi_tmdb/services/storage/settings_keys.dart';
 

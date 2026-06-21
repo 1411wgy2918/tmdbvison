@@ -68,7 +68,7 @@ class TMDBItem {
     Map<String, String> parseImages(Map<String, dynamic> data) {
       final String? posterPath = data['poster_path'] as String?;
       final String? backdropPath = data['backdrop_path'] as String?;
-      
+
       return {
         'large': posterPath != null && posterPath.isNotEmpty
             ? 'https://image.tmdb.org/t/p/w500$posterPath'
@@ -102,7 +102,9 @@ class TMDBItem {
 
     // 解析原产国
     String parseOriginCountry(dynamic originCountries) {
-      if (originCountries == null || originCountries is! List || originCountries.isEmpty) {
+      if (originCountries == null ||
+          originCountries is! List ||
+          originCountries.isEmpty) {
         return '';
       }
       return (originCountries.first as String).toUpperCase();
@@ -117,7 +119,7 @@ class TMDBItem {
       if (results == null || results.isEmpty) {
         return '';
       }
-      
+
       for (var result in results) {
         if (result is Map && result['iso_3166_1'] == 'CN') {
           final data = result['data'] as Map?;
@@ -131,10 +133,12 @@ class TMDBItem {
     }
 
     final String nameStr = (json['name'] ?? json['title'] ?? '') as String;
-    final String airDateStr = (json['first_air_date'] ?? json['release_date'] ?? '') as String;
+    final String airDateStr =
+        (json['first_air_date'] ?? json['release_date'] ?? '') as String;
     final List<String> genreList = parseGenres(json['genres']);
     final Map<String, String> imageMap = parseImages(json);
-    final String originCountryStr = parseOriginCountry(json['origin_countries'] ?? json['origin_country']);
+    final String originCountryStr =
+        parseOriginCountry(json['origin_countries'] ?? json['origin_country']);
     final String nameCnStr = parseNameCn(json['translations']);
 
     return TMDBItem(
@@ -169,7 +173,9 @@ class TMDBItem {
       airWeekday: _parseAirWeekday(airDate),
       rank: (voteAverage * 10).toInt(), // TMDB 评分 0-10 转换为 0-100
       images: images,
-      tags: genres.map((genre) => BangumiTag(name: genre, count: 0, totalCount: 0)).toList(),
+      tags: genres
+          .map((genre) => BangumiTag(name: genre, count: 0, totalCount: 0))
+          .toList(),
       alias: [],
       ratingScore: voteAverage,
       votes: voteCount,

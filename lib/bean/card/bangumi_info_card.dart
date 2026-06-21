@@ -210,7 +210,7 @@ class _BangumiInfoCardVState extends State<BangumiInfoCardV> {
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
                                       color:
-                                        Theme.of(context).colorScheme.primary,
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   const SizedBox(width: 8),
@@ -218,13 +218,13 @@ class _BangumiInfoCardVState extends State<BangumiInfoCardV> {
                                     itemCount: 5,
                                     rating: widget.showRating
                                         ? widget.bangumiItem.ratingScore
-                                          .toDouble() /
-                                          2
+                                                .toDouble() /
+                                            2
                                         : 0,
                                     itemBuilder: (context, index) => Icon(
                                       Icons.star_rounded,
                                       color:
-                                        Theme.of(context).colorScheme.primary,
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     itemSize: 20.0,
                                   ),

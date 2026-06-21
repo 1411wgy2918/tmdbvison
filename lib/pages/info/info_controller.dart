@@ -214,8 +214,8 @@ abstract class _InfoController with Store {
     final crew = credits['crew'] as List? ?? [];
     staffList.clear();
     staffList.addAll(TMDBConverter.convertCrewToStaffItems(crew));
-    KazumiLogger().i(
-        'InfoController: loaded TMDB staff list length ${staffList.length}');
+    KazumiLogger()
+        .i('InfoController: loaded TMDB staff list length ${staffList.length}');
   }
 
   Future<void> queryTMDBCommentsByID(int id) async {

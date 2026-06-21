@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  APP_NAME: kazumi
+  APP_NAME: TMDBvision
   BUILD_NUMBER: ${{ github.run_number }}
 
 jobs:
@@ -58,13 +58,14 @@ jobs:
           } else {
             $releasePath = "build/windows/runner/Release"
           }
-          Compress-Archive -Path "$releasePath/*" -DestinationPath "build/kazumi-windows-${{ github.run_number }}.zip"
+          $zipName = "build/TMDBvision-windows-${{ github.run_number }}.zip"
+          Compress-Archive -Path "$releasePath/*" -DestinationPath $zipName
 
       - name: Upload Windows Build
         uses: actions/upload-artifact@v5
         with:
           name: windows-build
-          path: build/kazumi-windows-${{ github.run_number }}.zip
+          path: build/TMDBvision-windows-${{ github.run_number }}.zip
           retention-days: 7
 
       - name: Upload Windows Release Folder

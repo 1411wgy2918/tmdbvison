@@ -284,7 +284,8 @@ class TMDBApi {
   }
 
   /// 获取演职人员（演员 + 制作人员）
-  static Future<Map<String, dynamic>?> getCredits(int id, {String mediaType = 'tv'}) async {
+  static Future<Map<String, dynamic>?> getCredits(int id,
+      {String mediaType = 'tv'}) async {
     try {
       final template = mediaType == 'movie'
           ? ApiEndpoints.tmdbCreditsMovie
@@ -305,7 +306,8 @@ class TMDBApi {
   }
 
   /// 获取评论
-  static Future<Map<String, dynamic>?> getReviews(int id, {String mediaType = 'tv'}) async {
+  static Future<Map<String, dynamic>?> getReviews(int id,
+      {String mediaType = 'tv'}) async {
     try {
       final template = mediaType == 'movie'
           ? ApiEndpoints.tmdbReviewsMovie

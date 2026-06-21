@@ -46,9 +46,11 @@ class _PopularPageState extends State<PopularPage>
     // 从设置加载默认数据源
     DataSourceResolverPool.loadDefaultSource();
     popularController.currentDataSource = DataSourceResolverPool.currentSource;
-    popularController.updateTagsForDataSource(popularController.currentDataSource);
-    
-    if (popularController.trendList.isEmpty && popularController.bangumiList.isEmpty) {
+    popularController
+        .updateTagsForDataSource(popularController.currentDataSource);
+
+    if (popularController.trendList.isEmpty &&
+        popularController.bangumiList.isEmpty) {
       popularController.queryContentByType(type: 'init');
     }
   }
@@ -134,8 +136,10 @@ class _PopularPageState extends State<PopularPage>
                         child: BangumiMirrorErrorWidget(
                           dataSource: popularController.currentDataSource,
                           onRetry: () {
-                            if (popularController.currentDataSource == DataSourceType.tmdb) {
-                              popularController.queryContentByType(type: 'init');
+                            if (popularController.currentDataSource ==
+                                DataSourceType.tmdb) {
+                              popularController.queryContentByType(
+                                  type: 'init');
                             } else if (popularController.trendList.isEmpty) {
                               popularController.queryBangumiByTrend();
                             } else {
@@ -152,7 +156,8 @@ class _PopularPageState extends State<PopularPage>
                     );
                   }
                   return contentGrid(
-                    popularController.currentDataSource == DataSourceType.bangumi
+                    popularController.currentDataSource ==
+                            DataSourceType.bangumi
                         ? (popularController.currentTag == ''
                             ? popularController.trendList
                             : popularController.bangumiList)
@@ -239,7 +244,9 @@ class _PopularPageState extends State<PopularPage>
                     child: Observer(
                       builder: (_) {
                         final bool isTrend = popularController.currentTag == '';
-                        final bool isTMDB = popularController.currentDataSource == DataSourceType.tmdb;
+                        final bool isTMDB =
+                            popularController.currentDataSource ==
+                                DataSourceType.tmdb;
                         final bool isMovie = popularController.isMovieMode;
                         String titleText;
                         if (!isTrend) {
@@ -298,8 +305,7 @@ class _PopularPageState extends State<PopularPage>
                     ButtonSegment(
                       value: DataSourceType.tmdb,
                       label: Tooltip(
-                          message: 'TMDB',
-                          child: Icon(Icons.movie, size: 20)),
+                          message: 'TMDB', child: Icon(Icons.movie, size: 20)),
                     ),
                   ],
                   selected: {popularController.currentDataSource},

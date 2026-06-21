@@ -38,7 +38,8 @@ class _SearchPageState extends State<SearchPage> {
     super.initState();
     scrollController.addListener(scrollListener);
     DataSourceResolverPool.loadDefaultSource();
-    if (DataSourceResolverPool.currentSource != searchPageController.currentDataSource) {
+    if (DataSourceResolverPool.currentSource !=
+        searchPageController.currentDataSource) {
       searchPageController.setDataSource(DataSourceResolverPool.currentSource);
     }
     searchPageController.loadSearchHistories();
@@ -209,47 +210,49 @@ class _SearchPageState extends State<SearchPage> {
         icon: const Icon(Icons.sort),
         label: const Text("搜索设置"),
       ),
-        body: Column(
-          children: [
-            // 数据源切换按钮
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Observer(
-                    builder: (_) => SegmentedButton<DataSourceType>(
-                      segments: const [
-                        ButtonSegment(
-                          value: DataSourceType.bangumi,
-                          label: Text('Bangumi', style: TextStyle(fontSize: 12)),
-                          icon: Icon(Icons.animation, size: 20),
-                        ),
-                        ButtonSegment(
-                          value: DataSourceType.tmdb,
-                          label: Text('TMDB', style: TextStyle(fontSize: 12)),
-                          icon: Icon(Icons.movie, size: 20),
-                        ),
-                      ],
-                      selected: {searchPageController.currentDataSource},
-                      onSelectionChanged: (Set<DataSourceType> newSelection) {
-                        if (newSelection.isNotEmpty) {
-                          searchPageController.setDataSource(newSelection.first);
-                          // 如果有搜索词，重新搜索
-                          if (searchController.text.isNotEmpty) {
-                            searchPageController.searchBangumi(searchController.text,
-                                type: 'init');
-                          }
+      body: Column(
+        children: [
+          // 数据源切换按钮
+          Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Observer(
+                  builder: (_) => SegmentedButton<DataSourceType>(
+                    segments: const [
+                      ButtonSegment(
+                        value: DataSourceType.bangumi,
+                        label: Text('Bangumi', style: TextStyle(fontSize: 12)),
+                        icon: Icon(Icons.animation, size: 20),
+                      ),
+                      ButtonSegment(
+                        value: DataSourceType.tmdb,
+                        label: Text('TMDB', style: TextStyle(fontSize: 12)),
+                        icon: Icon(Icons.movie, size: 20),
+                      ),
+                    ],
+                    selected: {searchPageController.currentDataSource},
+                    onSelectionChanged: (Set<DataSourceType> newSelection) {
+                      if (newSelection.isNotEmpty) {
+                        searchPageController.setDataSource(newSelection.first);
+                        // 如果有搜索词，重新搜索
+                        if (searchController.text.isNotEmpty) {
+                          searchPageController.searchBangumi(
+                              searchController.text,
+                              type: 'init');
                         }
-                      },
-                      showSelectedIcon: false,
-                      emptySelectionAllowed: false,
-                    ),
+                      }
+                    },
+                    showSelectedIcon: false,
+                    emptySelectionAllowed: false,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
-            Padding(
+          ),
+          Padding(
             padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
             child: FocusScope(
               descendantsAreFocusable: false,

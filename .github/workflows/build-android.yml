@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  APP_NAME: kazumi
+  APP_NAME: TMDBvision
   BUILD_NUMBER: ${{ github.run_number }}
   GRADLE_OPTS: -Dorg.gradle.daemon=false
 

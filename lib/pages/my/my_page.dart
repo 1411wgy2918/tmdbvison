@@ -170,7 +170,8 @@ class _MyPageState extends State<MyPage> {
                     Modular.to.pushNamed('/settings/tmdb');
                   },
                   leading: const Icon(Icons.movie_filter_rounded),
-                  title: Text('TMDB 配置', style: TextStyle(fontFamily: fontFamily)),
+                  title:
+                      Text('TMDB 配置', style: TextStyle(fontFamily: fontFamily)),
                   description: Text('配置 TMDB API Key 和默认数据源',
                       style: TextStyle(fontFamily: fontFamily)),
                 ),

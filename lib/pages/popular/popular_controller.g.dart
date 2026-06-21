@@ -7,7 +7,8 @@
 part of 'popular_controller.dart';
 
 mixin _$PopularController on _PopularController {
-  late final _$currentTagAtom = Atom(name: '_PopularController.currentTag', context: context);
+  late final _$currentTagAtom =
+      Atom(name: '_PopularController.currentTag', context: context);
 
   @override
   String get currentTag {
@@ -22,7 +23,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$currentDataSourceAtom = Atom(name: '_PopularController.currentDataSource', context: context);
+  late final _$currentDataSourceAtom =
+      Atom(name: '_PopularController.currentDataSource', context: context);
 
   @override
   DataSourceType get currentDataSource {
@@ -37,7 +39,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$availableTagsAtom = Atom(name: '_PopularController.availableTags', context: context);
+  late final _$availableTagsAtom =
+      Atom(name: '_PopularController.availableTags', context: context);
 
   @override
   ObservableList<String> get availableTags {
@@ -52,7 +55,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$bangumiListAtom = Atom(name: '_PopularController.bangumiList', context: context);
+  late final _$bangumiListAtom =
+      Atom(name: '_PopularController.bangumiList', context: context);
 
   @override
   ObservableList<BangumiItem> get bangumiList {
@@ -67,7 +71,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$trendListAtom = Atom(name: '_PopularController.trendList', context: context);
+  late final _$trendListAtom =
+      Atom(name: '_PopularController.trendList', context: context);
 
   @override
   ObservableList<BangumiItem> get trendList {
@@ -82,7 +87,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$isLoadingMoreAtom = Atom(name: '_PopularController.isLoadingMore', context: context);
+  late final _$isLoadingMoreAtom =
+      Atom(name: '_PopularController.isLoadingMore', context: context);
 
   @override
   bool get isLoadingMore {
@@ -97,7 +103,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$isTimeOutAtom = Atom(name: '_PopularController.isTimeOut', context: context);
+  late final _$isTimeOutAtom =
+      Atom(name: '_PopularController.isTimeOut', context: context);
 
   @override
   bool get isTimeOut {
@@ -112,7 +119,8 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$isMovieModeAtom = Atom(name: '_PopularController.isMovieMode', context: context);
+  late final _$isMovieModeAtom =
+      Atom(name: '_PopularController.isMovieMode', context: context);
 
   @override
   bool get isMovieMode {
@@ -127,11 +135,13 @@ mixin _$PopularController on _PopularController {
     });
   }
 
-  late final _$_PopularControllerActionController = ActionController(name: '_PopularController', context: context);
+  late final _$_PopularControllerActionController =
+      ActionController(name: '_PopularController', context: context);
 
   @override
   void setCurrentTag(String s) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.setCurrentTag');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.setCurrentTag');
     try {
       return super.setCurrentTag(s);
     } finally {
@@ -141,7 +151,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   void setDataSource(DataSourceType source) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.setDataSource');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.setDataSource');
     try {
       return super.setDataSource(source);
     } finally {
@@ -151,7 +162,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   void clearBangumiList() {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.clearBangumiList');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.clearBangumiList');
     try {
       return super.clearBangumiList();
     } finally {
@@ -161,7 +173,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   void clearTrendList() {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.clearTrendList');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.clearTrendList');
     try {
       return super.clearTrendList();
     } finally {
@@ -171,7 +184,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   Future<void> queryContentByType({String type = 'add'}) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.queryContentByType');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.queryContentByType');
     try {
       return super.queryContentByType(type: type);
     } finally {
@@ -181,7 +195,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   Future<void> queryBangumiByTrend({String type = 'add'}) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.queryBangumiByTrend');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.queryBangumiByTrend');
     try {
       return super.queryBangumiByTrend(type: type);
     } finally {
@@ -191,7 +206,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   Future<void> queryBangumiByTag({String type = 'add'}) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.queryBangumiByTag');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.queryBangumiByTag');
     try {
       return super.queryBangumiByTag(type: type);
     } finally {
@@ -201,7 +217,8 @@ mixin _$PopularController on _PopularController {
 
   @override
   void setMovieMode(bool v) {
-    final _$actionInfo = _$_PopularControllerActionController.startAction(name: '_PopularController.setMovieMode');
+    final _$actionInfo = _$_PopularControllerActionController.startAction(
+        name: '_PopularController.setMovieMode');
     try {
       return super.setMovieMode(v);
     } finally {

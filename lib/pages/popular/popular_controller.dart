@@ -112,7 +112,7 @@ abstract class _PopularController with Store {
         useMirror: _bangumiMirrorEnabled,
         isMovie: isMovieMode,
       );
-      
+
       if (currentDataSource == DataSourceType.bangumi) {
         if (currentTag.isEmpty) {
           trendList.addAll(result);

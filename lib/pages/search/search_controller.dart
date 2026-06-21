@@ -104,7 +104,7 @@ abstract class _SearchPageController with Store {
     String? tag = parser.parseTag();
     String? sort = parser.parseSort();
     String keywords = parser.parseKeywords();
-    
+
     // 如果是 Bangumi ID 搜索，只使用 Bangumi API
     if (idString != null) {
       final id = int.tryParse(idString);
@@ -118,7 +118,7 @@ abstract class _SearchPageController with Store {
         return;
       }
     }
-    
+
     // 使用数据源解析器进行搜索
     List<BangumiItem> result;
     if (currentDataSource == DataSourceType.tmdb) {
@@ -135,7 +135,7 @@ abstract class _SearchPageController with Store {
           offset: bangumiList.length,
           sort: sort ?? 'heat');
     }
-    
+
     bangumiList.addAll(result);
     isLoading = false;
     isTimeOut = bangumiList.isEmpty;

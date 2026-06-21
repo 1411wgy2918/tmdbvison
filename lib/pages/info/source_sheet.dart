@@ -363,18 +363,18 @@ class _SourceSheetState extends State<SourceSheet>
                   Text(
                     '结果不准确？',
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context)
-                          .textTheme
-                          .bodySmall
-                          ?.color
-                          ?.withValues(alpha: 0.75),
-                    ),
+                          color: Theme.of(context)
+                              .textTheme
+                              .bodySmall
+                              ?.color
+                              ?.withValues(alpha: 0.75),
+                        ),
                   ),
                   TextButton(
                     style: TextButton.styleFrom(
                       minimumSize: Size.zero,
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 10),
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       visualDensity: VisualDensity.compact,
                       textStyle: Theme.of(context).textTheme.bodySmall,
@@ -385,8 +385,8 @@ class _SourceSheetState extends State<SourceSheet>
                   TextButton(
                     style: TextButton.styleFrom(
                       minimumSize: Size.zero,
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 10),
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       visualDensity: VisualDensity.compact,
                       textStyle: Theme.of(context).textTheme.bodySmall,
@@ -499,13 +499,13 @@ class _SourceSheetState extends State<SourceSheet>
                                       plugin.name,
                                       overflow: TextOverflow.ellipsis,
                                       style: TextStyle(
-                                        fontSize: Theme.of(context)
-                                            .textTheme
-                                            .titleMedium!
-                                            .fontSize,
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onSurface),
+                                          fontSize: Theme.of(context)
+                                              .textTheme
+                                              .titleMedium!
+                                              .fontSize,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onSurface),
                                     ),
                                     const SizedBox(width: 5.0),
                                     Container(
@@ -539,7 +539,7 @@ class _SourceSheetState extends State<SourceSheet>
                       Uri.parse(pluginsController
                           .pluginList[currentIndex].searchURL
                           .replaceFirst(
-                            '@keyword', Uri.encodeQueryComponent(keyword))),
+                              '@keyword', Uri.encodeQueryComponent(keyword))),
                       mode: LaunchMode.externalApplication,
                     );
                   },

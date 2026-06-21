@@ -24,8 +24,7 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
   @override
   void initState() {
     super.initState();
-    tmdbApiKeyController.text =
-        GStorage.getSetting(SettingsKeys.tmdbApiKey);
+    tmdbApiKeyController.text = GStorage.getSetting(SettingsKeys.tmdbApiKey);
     defaultDataSource = GStorage.getSetting(SettingsKeys.defaultDataSource);
   }
 
@@ -59,7 +58,7 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
       final client = TMDBClient();
       // 尝试获取热门动漫验证 API Key
       await client.get('/trending/tv/day');
-      
+
       KazumiDialog.showToast(message: 'TMDB API Key 验证成功！');
     } catch (e) {
       KazumiDialog.showToast(message: '验证失败：${e.toString()}');
@@ -95,9 +94,7 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
           title: const Text('TMDB 配置'),
           actions: [
             IconButton(
-              onPressed: isVerifying
-                  ? null
-                  : verifyTMDBApiKey,
+              onPressed: isVerifying ? null : verifyTMDBApiKey,
               icon: isVerifying
                   ? const SizedBox(
                       width: 20,
@@ -184,7 +181,8 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
                                     title: const Text('Bangumi'),
                                     subtitle: const Text('使用 Bangumi 数据源'),
                                     selected: defaultDataSource == 'bangumi',
-                                    onTap: () => Navigator.pop(context, 'bangumi'),
+                                    onTap: () =>
+                                        Navigator.pop(context, 'bangumi'),
                                   ),
                                   ListTile(
                                     leading: const Icon(Icons.movie),
@@ -197,7 +195,7 @@ class _TMDBSettingsPageState extends State<TMDBSettingsPage> {
                               ),
                             ),
                           );
-                          
+
                           if (result != null) {
                             await updateDefaultDataSource(result);
                           }

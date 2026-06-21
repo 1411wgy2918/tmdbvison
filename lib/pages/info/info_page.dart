@@ -122,8 +122,7 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
     });
     try {
       if (_isTMDB()) {
-        await infoController
-            .queryTMDBStaffByID(infoController.bangumiItem.id);
+        await infoController.queryTMDBStaffByID(infoController.bangumiItem.id);
       } else {
         await infoController
             .queryBangumiStaffsByID(infoController.bangumiItem.id);
@@ -399,12 +398,11 @@ class _InfoPageState extends State<InfoPage> with TickerProviderStateMixin {
                           onPressed: () {
                             final type = infoController.bangumiItem.type;
                             launchUrl(
-                              Uri.parse(
-                                  type >= 98
-                                      ? type == 98
-                                          ? 'https://www.themoviedb.org/movie/${infoController.bangumiItem.id}'
-                                          : 'https://www.themoviedb.org/tv/${infoController.bangumiItem.id}'
-                                      : 'https://bangumi.tv/subject/${infoController.bangumiItem.id}'),
+                              Uri.parse(type >= 98
+                                  ? type == 98
+                                      ? 'https://www.themoviedb.org/movie/${infoController.bangumiItem.id}'
+                                      : 'https://www.themoviedb.org/tv/${infoController.bangumiItem.id}'
+                                  : 'https://bangumi.tv/subject/${infoController.bangumiItem.id}'),
                               mode: LaunchMode.externalApplication,
                             );
                           },

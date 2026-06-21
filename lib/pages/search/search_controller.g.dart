@@ -7,7 +7,8 @@
 part of 'search_controller.dart';
 
 mixin _$SearchPageController on _SearchPageController, Store {
-  late final _$isLoadingAtom = Atom(name: '_SearchPageController.isLoading', context: context);
+  late final _$isLoadingAtom =
+      Atom(name: '_SearchPageController.isLoading', context: context);
 
   @override
   bool get isLoading {
@@ -22,7 +23,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$isTimeOutAtom = Atom(name: '_SearchPageController.isTimeOut', context: context);
+  late final _$isTimeOutAtom =
+      Atom(name: '_SearchPageController.isTimeOut', context: context);
 
   @override
   bool get isTimeOut {
@@ -37,7 +39,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$currentDataSourceAtom = Atom(name: '_SearchPageController.currentDataSource', context: context);
+  late final _$currentDataSourceAtom =
+      Atom(name: '_SearchPageController.currentDataSource', context: context);
 
   @override
   DataSourceType get currentDataSource {
@@ -52,7 +55,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$notShowWatchedBangumisAtom = Atom(name: '_SearchPageController.notShowWatchedBangumis', context: context);
+  late final _$notShowWatchedBangumisAtom = Atom(
+      name: '_SearchPageController.notShowWatchedBangumis', context: context);
 
   @override
   bool get notShowWatchedBangumis {
@@ -64,13 +68,18 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   set notShowWatchedBangumis(bool value) {
-    _$notShowWatchedBangumisAtom.reportWrite(value, _notShowWatchedBangumisIsInitialized ? super.notShowWatchedBangumis : null, () {
+    _$notShowWatchedBangumisAtom.reportWrite(
+        value,
+        _notShowWatchedBangumisIsInitialized
+            ? super.notShowWatchedBangumis
+            : null, () {
       super.notShowWatchedBangumis = value;
       _notShowWatchedBangumisIsInitialized = true;
     });
   }
 
-  late final _$notShowAbandonedBangumisAtom = Atom(name: '_SearchPageController.notShowAbandonedBangumis', context: context);
+  late final _$notShowAbandonedBangumisAtom = Atom(
+      name: '_SearchPageController.notShowAbandonedBangumis', context: context);
 
   @override
   bool get notShowAbandonedBangumis {
@@ -82,13 +91,18 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   set notShowAbandonedBangumis(bool value) {
-    _$notShowAbandonedBangumisAtom.reportWrite(value, _notShowAbandonedBangumisIsInitialized ? super.notShowAbandonedBangumis : null, () {
+    _$notShowAbandonedBangumisAtom.reportWrite(
+        value,
+        _notShowAbandonedBangumisIsInitialized
+            ? super.notShowAbandonedBangumis
+            : null, () {
       super.notShowAbandonedBangumis = value;
       _notShowAbandonedBangumisIsInitialized = true;
     });
   }
 
-  late final _$bangumiListAtom = Atom(name: '_SearchPageController.bangumiList', context: context);
+  late final _$bangumiListAtom =
+      Atom(name: '_SearchPageController.bangumiList', context: context);
 
   @override
   ObservableList<BangumiItem> get bangumiList {
@@ -103,7 +117,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$searchHistoriesAtom = Atom(name: '_SearchPageController.searchHistories', context: context);
+  late final _$searchHistoriesAtom =
+      Atom(name: '_SearchPageController.searchHistories', context: context);
 
   @override
   ObservableList<SearchHistory> get searchHistories {
@@ -118,7 +133,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$isImageSearchingAtom = Atom(name: '_SearchPageController.isImageSearching', context: context);
+  late final _$isImageSearchingAtom =
+      Atom(name: '_SearchPageController.isImageSearching', context: context);
 
   @override
   bool get isImageSearching {
@@ -133,7 +149,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$imageSearchErrorAtom = Atom(name: '_SearchPageController.imageSearchError', context: context);
+  late final _$imageSearchErrorAtom =
+      Atom(name: '_SearchPageController.imageSearchError', context: context);
 
   @override
   String get imageSearchError {
@@ -148,7 +165,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$imageSearchResultsAtom = Atom(name: '_SearchPageController.imageSearchResults', context: context);
+  late final _$imageSearchResultsAtom =
+      Atom(name: '_SearchPageController.imageSearchResults', context: context);
 
   @override
   ObservableList<ResultItem> get imageSearchResults {
@@ -163,11 +181,13 @@ mixin _$SearchPageController on _SearchPageController, Store {
     });
   }
 
-  late final _$_SearchPageControllerActionController = ActionController(name: '_SearchPageController', context: context);
+  late final _$_SearchPageControllerActionController =
+      ActionController(name: '_SearchPageController', context: context);
 
   @override
   void loadSearchHistories() {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.loadSearchHistories');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.loadSearchHistories');
     try {
       return super.loadSearchHistories();
     } finally {
@@ -177,7 +197,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   String attachSortParams(String input, String sort) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.attachSortParams');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.attachSortParams');
     try {
       return super.attachSortParams(input, sort);
     } finally {
@@ -187,7 +208,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   Future<void> searchBangumi(String input, {String type = 'add'}) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.searchBangumi');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.searchBangumi');
     try {
       return super.searchBangumi(input, type: type);
     } finally {
@@ -197,7 +219,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   Future<void> deleteSearchHistory(SearchHistory history) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.deleteSearchHistory');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.deleteSearchHistory');
     try {
       return super.deleteSearchHistory(history);
     } finally {
@@ -207,7 +230,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   Future<void> clearSearchHistory() {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.clearSearchHistory');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.clearSearchHistory');
     try {
       return super.clearSearchHistory();
     } finally {
@@ -217,7 +241,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   void clearImageSearchState() {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.clearImageSearchState');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.clearImageSearchState');
     try {
       return super.clearImageSearchState();
     } finally {
@@ -227,7 +252,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   Future<void> searchImageByFile(File imageFile) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.searchImageByFile');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.searchImageByFile');
     try {
       return super.searchImageByFile(imageFile);
     } finally {
@@ -237,7 +263,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   Future<void> searchImageByUrl(String imageUrl) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.searchImageByUrl');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.searchImageByUrl');
     try {
       return super.searchImageByUrl(imageUrl);
     } finally {
@@ -247,7 +274,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   void setNotShowWatchedBangumis(bool value) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.setNotShowWatchedBangumis');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.setNotShowWatchedBangumis');
     try {
       return super.setNotShowWatchedBangumis(value);
     } finally {
@@ -257,7 +285,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   void setNotShowAbandonedBangumis(bool value) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.setNotShowAbandonedBangumis');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.setNotShowAbandonedBangumis');
     try {
       return super.setNotShowAbandonedBangumis(value);
     } finally {
@@ -267,7 +296,8 @@ mixin _$SearchPageController on _SearchPageController, Store {
 
   @override
   void setDataSource(DataSourceType source) {
-    final _$actionInfo = _$_SearchPageControllerActionController.startAction(name: '_SearchPageController.setDataSource');
+    final _$actionInfo = _$_SearchPageControllerActionController.startAction(
+        name: '_SearchPageController.setDataSource');
     try {
       return super.setDataSource(source);
     } finally {

@@ -94,7 +94,8 @@ class DataSourceResolverPool {
         } else if (movieTag == 'Top Rated') {
           tmdbItems = await TMDBApi.getTopRatedMovie(page: page);
         } else {
-          tmdbItems = await TMDBApi.getMovieByCategory(category: movieTag, page: page);
+          tmdbItems =
+              await TMDBApi.getMovieByCategory(category: movieTag, page: page);
         }
       } else {
         final resolvedTag = tmdbTagMap[tag] ?? tag;
@@ -103,7 +104,8 @@ class DataSourceResolverPool {
         } else if (resolvedTag == 'Top Rated') {
           tmdbItems = await TMDBApi.getTopRatedTV(page: page);
         } else {
-          tmdbItems = await TMDBApi.getTVByCategory(category: resolvedTag, page: page);
+          tmdbItems =
+              await TMDBApi.getTVByCategory(category: resolvedTag, page: page);
         }
       }
 

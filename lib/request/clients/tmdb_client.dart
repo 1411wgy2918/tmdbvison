@@ -31,7 +31,7 @@ class TMDBClient {
     _dio.options.baseUrl = 'https://api.themoviedb.org/3';
     _dio.options.connectTimeout = const Duration(seconds: 15);
     _dio.options.receiveTimeout = const Duration(seconds: 15);
-    
+
     // 添加拦截器处理 API Key 和错误
     _dio.interceptors.add(InterceptorsWrapper(
       onRequest: (options, handler) {
@@ -59,7 +59,7 @@ class TMDBClient {
     if (apiKey == '' || apiKey.isEmpty) {
       throw TMDBNotConfiguredException();
     }
-    
+
     _instance ??= TMDBClient._internal(apiKey: apiKey);
     return _instance!;
   }
