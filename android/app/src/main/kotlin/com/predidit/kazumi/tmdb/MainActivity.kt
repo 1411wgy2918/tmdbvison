@@ -1,4 +1,4 @@
-package com.example.kazumi
+package com.predidit.kazumi.tmdb
 
 import android.app.PendingIntent
 import android.content.Intent
@@ -23,9 +23,9 @@ import io.flutter.plugin.common.MethodChannel
 import com.ryanheise.audioservice.AudioServiceActivity
 
 class MainActivity: AudioServiceActivity() {
-    private val CHANNEL = "com.predidit.kazumi/intent"
-    private val STORAGE_CHANNEL = "com.predidit.kazumi/storage"
-    private val PIP_CHANNEL = "com.predidit.kazumi/pip"
+    private val CHANNEL = "com.predidit.kazumi.tmdb/intent"
+    private val STORAGE_CHANNEL = "com.predidit.kazumi.tmdb/storage"
+    private val PIP_CHANNEL = "com.predidit.kazumi.tmdb/pip"
     private var intentChannel: MethodChannel? = null
     private var pipChannel: MethodChannel? = null
 
@@ -38,9 +38,9 @@ class MainActivity: AudioServiceActivity() {
     private var pipAspectHeight = 9
     private var androidFullscreen = false
 
-    private val actionPipPlayPause = "com.predidit.kazumi.pip.PLAY_PAUSE"
-    private val actionPipForward = "com.predidit.kazumi.pip.FORWARD"
-    private val actionPipToggleDanmaku = "com.predidit.kazumi.pip.TOGGLE_DANMAKU"
+    private val actionPipPlayPause = "com.predidit.kazumi.tmdb.pip.PLAY_PAUSE"
+    private val actionPipForward = "com.predidit.kazumi.tmdb.pip.FORWARD"
+    private val actionPipToggleDanmaku = "com.predidit.kazumi.tmdb.pip.TOGGLE_DANMAKU"
 
     private val pipActionReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: android.content.Context?, intent: Intent?) {

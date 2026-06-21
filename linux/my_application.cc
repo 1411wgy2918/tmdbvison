@@ -120,12 +120,12 @@ static void my_application_activate(GApplication* application) {
 
   g_autoptr(FlStandardMethodCodec) codec = fl_standard_method_codec_new();
   self->intent_method_channel = fl_method_channel_new(
-  fl_engine_get_binary_messenger(fl_view_get_engine(view)), "com.predidit.kazumi/intent", FL_METHOD_CODEC(codec));
+  fl_engine_get_binary_messenger(fl_view_get_engine(view)), "com.predidit.kazumi.tmdb/intent", FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(
       self->intent_method_channel, intent_method_call_handler, self, nullptr);
 
   self->storage_method_channel = fl_method_channel_new(
-      fl_engine_get_binary_messenger(fl_view_get_engine(view)), "com.predidit.kazumi/storage", FL_METHOD_CODEC(codec));
+      fl_engine_get_binary_messenger(fl_view_get_engine(view)), "com.predidit.kazumi.tmdb/storage", FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(
       self->storage_method_channel, storage_method_call_handler, self, nullptr);
 

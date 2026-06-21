@@ -6,7 +6,8 @@ import 'package:kazumi_tmdb/services/logging/logger.dart';
 class PlatformEnvironmentService {
   PlatformEnvironmentService._();
 
-  static const _intentChannel = MethodChannel('com.predidit.kazumi/intent');
+  static const _intentChannel =
+      MethodChannel('com.predidit.kazumi.tmdb/intent');
 
   static Future<bool> isInMultiWindowMode() async {
     if (!Platform.isAndroid) {

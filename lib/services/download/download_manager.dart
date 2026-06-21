@@ -146,7 +146,8 @@ class DownloadManager implements IDownloadManager {
   ProgressCallback? onProgress;
 
   static const _minRequiredSpace = 100 * 1024 * 1024; // 100MB minimum
-  static const _storageChannel = MethodChannel('com.predidit.kazumi/storage');
+  static const _storageChannel =
+      MethodChannel('com.predidit.kazumi.tmdb/storage');
 
   void _loadSettings() {
     maxParallelEpisodes =
